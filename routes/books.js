@@ -144,7 +144,8 @@ router.delete('/books/:id', (req, res, next) => {
     .del('*')
     .where('id', id)
     .then((books) => {
-      let book = books[0];
+      const book = books[0];
+
       if (!book) {
         return next();
       }
@@ -154,7 +155,7 @@ router.delete('/books/:id', (req, res, next) => {
     .catch((err) => {
       console.log(err);
       next(err);
-    })
-})
+    });
+});
 
 module.exports = router;
