@@ -11,6 +11,9 @@
     "start": "nodemon server.js",
     "test": "mocha"
   },
+  "engines": {
+    "node": "7.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gschool/galvanize-bookshelf.git"
@@ -46,9 +49,6 @@
     "mocha": "^2.5.3",
     "nodemon": "^1.10.0",
     "supertest": "^1.2.0"
-  },
-  "engines": {
-    "node": "7.4.0"
   },
   "directories": {
     "test": "test"
